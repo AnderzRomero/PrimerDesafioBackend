@@ -20,13 +20,8 @@ class ProductManager {
     }
 
 
-    ObtenerProductosPorId(id) {
-        if (!this.busquedaProducto(id)) {
-            console.log("No Existe el producto");
-        } else {
-            console.log(this.busquedaProducto(id));
-        }
-    }
+    ObtenerProductosPorId(id) { !this.busquedaProducto(id) ? console.log("No Existe el producto") : console.log(this.busquedaProducto(id)) }
+    
 }
 
 const productos = new ProductManager
